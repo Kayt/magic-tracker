@@ -8,7 +8,10 @@ from .views import (
 	create_ticket_view,
 	update_ticket_view,
 	project_list_view,
-	update_project_view
+	update_project_view,
+    delete_ticket_view,
+    delete_project_view,
+    add_comment
 )
 
 urlpatterns = [
@@ -25,10 +28,21 @@ urlpatterns = [
     	name='ticket_update'
 	),
     url(
+    	r'^projects/(?P<project_id>\d+)/tickets/(?P<ticket_id>\d+)/remove$',
+    	delete_ticket_view,
+    	name='ticket_remove'
+	),
+    url(
     	r'^projects/(?P<project_id>\d+)/edit/$',
     	update_project_view,
     	name='project_update'
 	),
+    url(
+    	r'^projects/(?P<project_id>\d+)/remove/$',
+    	delete_project_view,
+    	name='project_remove'
+	),
     url(r'^projects/(?P<project_id>\d+)/$', project_view, name='project_detail'),
     url(r'^$', my_tickets_view, name='my_tickets'),
+    url(r'^post/(?P<pk>\d+)/comment/$', add_comment, name='ticket_comment'),
 ]

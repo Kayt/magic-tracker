@@ -11,7 +11,8 @@
 				<tr>
 					<th width="1200">Title</th>
 					<th width="1200">Assigned</th>
-					<th></th>
+                    <th></th>
+                    <th></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -28,6 +29,11 @@
 							<i class="fi-pencil">
 
 							</i>
+						</a>
+                    </td>
+                    <td>
+						<a href="{% url "ticket_remove" project_id=project.pk ticket_id=ticket.pk%}">
+							<i class="fi-x"></i>
 						</a>
 					</td>
 				</tr>

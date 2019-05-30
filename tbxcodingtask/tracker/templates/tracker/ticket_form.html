@@ -5,6 +5,23 @@
 <div class="large-8 large-centered columns">
 	<form action="" method="post">
 		{% crispy form form.helper %}
-	</form>
+    </form>
+    <hr>
+    <a class="button" href="{% url 'ticket_comment' pk=ticket.pk %}">Add Comment</a>
+    <div class="container">
+
+        {% for comment in ticket.comments.all %}
+            <br>
+            {% if user.is_authenticated %}
+                {{ comment.created_date }}
+
+                <p>{{ comment.content|safe|linebreaksbr }}</p>
+                <p>Posted By: {{ comment.author.username }}</p>
+            {% endif %}
+            {% empty %}
+            <p>No comments</p>
+        {% endfor %}
+
+    </div>
 </div>
 {% endblock %}

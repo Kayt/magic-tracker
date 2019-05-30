@@ -33,17 +33,17 @@ Please complete the bugs and features listed below. Please also bear the followi
 
 ## Bugs
 We would like you to fix the following bugs.
-- Create a ticket - an internal server error occurs
-- Update a ticket - an internal server error occurs
-- It is possible to move a ticket from one project to another by altering the URL on the edit ticket page. This should not be allowed
-- Deleting a project leaves tickets in the database
+- Create a ticket - an internal server error occurs DONE
+- Update a ticket - an internal server error occurs DONE
+- It is possible to move a ticket from one project to another by altering the URL on the edit ticket page. This should not be allowed DONE
+- Deleting a project leaves tickets in the database DONE
 
 ## Features
 Please implement the following features:
-- On the project list page, add a new column showing the count of how many tickets there are in each project
+- On the project list page, add a new column showing the count of how many tickets there are in each project DONE
 - Add ability to comment on a ticket
 
 ## Bonus tasks
 If you feel like carrying on improving this application, please do! Some ideas are shown below.
 - On the project list page, projects that the user has assigned tickets on should be shown above the other projects
-- Add the ability to delete tickets
+- Add the ability to delete tickets DONE

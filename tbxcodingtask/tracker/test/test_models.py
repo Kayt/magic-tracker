@@ -18,3 +18,5 @@ class TestTicket(TestCase):
         self.assertEquals(Ticket.objects.all().count(), 1)
         ticket.delete()
         self.assertEquals(Ticket.objects.all().count(), 0)
+
+

@@ -1,6 +1,6 @@
 import factory
 
-from tbxcodingtask.tracker.models import Project, Ticket
+from tbxcodingtask.tracker.models import Project, Ticket, Comment
 
 
 class ProjectFactory(factory.django.DjangoModelFactory):
