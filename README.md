@@ -41,9 +41,9 @@ We would like you to fix the following bugs.
 ## Features
 Please implement the following features:
 - On the project list page, add a new column showing the count of how many tickets there are in each project DONE
-- Add ability to comment on a ticket
+- Add ability to comment on a ticket DONE
 
 ## Bonus tasks
 If you feel like carrying on improving this application, please do! Some ideas are shown below.
-- On the project list page, projects that the user has assigned tickets on should be shown above the other projects
+- On the project list page, projects that the user has assigned tickets on should be shown above the other projects DONE
 - Add the ability to delete tickets DONE

@@ -185,7 +185,6 @@ class CreateCommentView(CreateView):
         return self.ticket
 
     def get_success_url(self):
-        print(dir(self))
         return reverse("project_detail", kwargs={"project_id": self.ticket.project.id})
 
     def get_form_kwargs(self):
