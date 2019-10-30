@@ -1,5 +1,5 @@
 -r requirements.txt
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 stellar==0.4.5
 
 # Remember to update a version in .gitlab-ci.yml
